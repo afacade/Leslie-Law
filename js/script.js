@@ -30,8 +30,10 @@ function pick(tier) {
 
 function submitForm() {
   var fn = document.getElementById('fn').value.trim();
+  var ln = document.getElementById('ln').value.trim();
   var em = document.getElementById('em').value.trim();
   var sess = document.getElementById('sess').value;
+  var dt = document.getElementById('dt').value;
   var summ = document.getElementById('summ').value.trim();
   var ack = document.getElementById('ack').checked;
   if (!fn || !em || !sess || !summ) {
@@ -49,6 +51,33 @@ function submitForm() {
     alert('Please keep your Matter Summary to a maximum of 5 sentences.');
     return;
   }
+
+  // Session type labels
+  var sessLabels = {
+    '30min': '30-Minute Initial Review ($350)',
+    '60min': '60-Minute Strategic Evaluation ($600)',
+    '15min': '15-Minute Preliminary Call (Complimentary)'
+  };
+  var sessLabel = sessLabels[sess] || sess;
+
+  // Format date
+  var dateDisplay = 'To be confirmed';
+  if (dt) {
+    var parts = dt.split('-');
+    var dateObj = new Date(parts[0], parts[1] - 1, parts[2]);
+    dateDisplay = dateObj.toLocaleDateString('en-US', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+  }
+
+  var fullName = fn + (ln ? ' ' + ln : '');
+
+  // Populate confirmation
+  document.getElementById('conf-name').textContent = fullName;
+  document.getElementById('conf-email-name').textContent = fullName;
+  document.getElementById('conf-date').textContent = dateDisplay;
+  document.getElementById('conf-session').textContent = sessLabel;
+
   document.getElementById('bview').style.display = 'none';
   document.getElementById('succ').classList.add('on');
   window.scrollTo({ top: 0, behavior: 'smooth' });
