@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leone Leone | San Francisco Bay Area Attorney</title>
+<meta name="description" content="Strategic legal counsel for high-stakes workplace challenges. San Francisco Bay Area Attorney Leslie Leone — Employment Law and Personal Injury.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0e0e0e;--cream:#f5f1eb;--ww:#faf8f5;--gold:#b8965a;--goldl:#d4b07a;--mid:#6b6560;--rule:#d8d2c8;--ser:'Cormorant Garamond',Georgia,serif;--san:'Jost',sans-serif}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--san);background:var(--ww);color:var(--ink);font-size:16px;line-height:1.6;font-weight:300;-webkit-font-smoothing:antialiased}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 56px;height:70px;display:flex;align-items:center;justify-content:space-between;background:rgba(250,248,245,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule)}
+.logo{font-family:var(--ser);font-size:18px;font-weight:400;letter-spacing:.04em;color:var(--ink);text-decoration:none;cursor:pointer}
+.logo span{color:var(--gold)}
+.nl{display:flex;align-items:center;gap:36px;list-style:none}
+.nl a{font-size:11px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--mid);text-decoration:none;cursor:pointer;transition:color .2s}
+.nl a:hover{color:var(--ink)}
+.ncta{background:var(--ink)!important;color:var(--cream)!important;padding:10px 22px!important;transition:background .2s!important}
+.ncta:hover{background:var(--gold)!important;color:var(--ink)!important}
+.page{display:none;padding-top:70px;min-height:100vh}
+.page.active{display:block}
+/* HERO */
+.hero{min-height:calc(100vh - 70px);display:grid;grid-template-columns:55% 45%;position:relative;overflow:hidden}
+.ht{display:flex;flex-direction:column;justify-content:center;padding:80px 60px 80px 80px}
+.eyebrow{font-size:10px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:28px}
+.headline{font-family:var(--ser);font-size:clamp(40px,4.5vw,66px);font-weight:300;line-height:1.1;margin-bottom:28px;letter-spacing:-.01em}
+.headline em{font-style:italic;color:var(--gold)}
+.subline{font-size:15px;font-weight:300;line-height:1.8;color:var(--mid);max-width:440px;margin-bottom:48px;border-left:2px solid var(--gold);padding-left:20px}
+.btn{display:inline-block;background:var(--ink);color:var(--cream);font-size:11px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;padding:16px 36px;cursor:pointer;border:none;transition:background .25s,color .25s;font-family:var(--san)}
+.btn:hover{background:var(--gold);color:var(--ink)}
+.hip{background:#1a1714;position:relative;overflow:hidden}
+.hip::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,#1c1714 0%,#2e2520 50%,#1a1714 100%)}
+.hipc{position:absolute;bottom:48px;left:48px;right:48px;font-family:var(--ser);font-size:13px;font-weight:300;font-style:italic;color:rgba(255,255,255,.28);border-top:1px solid rgba(255,255,255,.1);padding-top:16px}
+.hero::after{content:'';position:absolute;left:55%;top:10%;bottom:10%;width:1px;background:linear-gradient(to bottom,transparent,var(--rule) 30%,var(--rule) 70%,transparent);pointer-events:none}
+/* SHARED */
+.sl{font-size:10px;font-weight:400;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.st{font-family:var(--ser);font-size:clamp(30px,3.5vw,50px);font-weight:300;line-height:1.18;margin-bottom:22px}
+.st em{font-style:italic;color:var(--gold)}
+.sb{font-size:15px;font-weight:300;line-height:1.8;color:var(--mid)}
+hr.r{border:none;border-top:1px solid var(--rule);margin:0 80px}
+/* PRACTICE STRIP */
+.ps{background:var(--ink);padding:80px}
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,.07);margin-top:52px;border:1px solid rgba(255,255,255,.07)}
+.pc{background:var(--ink);padding:40px 30px;cursor:pointer;transition:background .2s}
+.pc:hover{background:#1d1a17}
+.pn{font-family:var(--ser);font-size:12px;color:var(--gold);margin-bottom:18px}
+.pt{font-family:var(--ser);font-size:21px;font-weight:300;color:var(--cream);line-height:1.3;margin-bottom:14px}
+.pb{font-size:13px;font-weight:300;color:rgba(245,241,235,.45);line-height:1.7}
+/* ABOUT TEASER */
+.asplit{display:grid;grid-template-columns:1fr 1fr}
+.al{padding:100px 60px 100px 80px}
+.ar{background:var(--cream);padding:100px 80px 100px 60px;display:flex;align-items:center}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:28px;width:100%}
+.stat{border-top:1px solid var(--rule);padding-top:18px}
+.stn{font-family:var(--ser);font-size:46px;font-weight:300;line-height:1;margin-bottom:6px}
+.stl{font-size:11px;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--mid)}
+/* QUOTE */
+.qband{background:var(--cream);padding:80px;text-align:center;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.qband blockquote{font-family:var(--ser);font-size:clamp(22px,3vw,36px);font-weight:300;font-style:italic;line-height:1.4;color:var(--ink);max-width:800px;margin:0 auto}
+.qband cite{display:block;margin-top:22px;font-size:11px;font-weight:400;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);font-style:normal}
+/* FOOTER */
+footer{background:var(--ink);padding:60px 80px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px}
+.fb{font-family:var(--ser);font-size:20px;font-weight:300;color:var(--cream);margin-bottom:14px}
+.fb span{color:var(--gold)}
+.ftag{font-size:12px;font-weight:300;color:rgba(245,241,235,.38);line-height:1.75;max-width:300px}
+.fc h4{font-size:10px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.fc ul{list-style:none}
+.fc li{margin-bottom:11px}
+.fc a{font-size:13px;font-weight:300;color:rgba(245,241,235,.45);text-decoration:none;cursor:pointer;transition:color .2s}
+.fc a:hover{color:var(--cream)}
+.fbot{background:var(--ink);padding:18px 80px;border-top:1px solid rgba(255,255,255,.05);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.fbot p{font-size:11px;color:rgba(245,241,235,.22);font-weight:300}
+/* ABOUT PAGE */
+.ahero{padding:80px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:2fr 1fr;gap:80px;align-items:end}
+.asecs{padding:80px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:56px}
+.asec h3{font-family:var(--ser);font-size:26px;font-weight:300;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--rule)}
+.asec p{font-size:14px;line-height:1.85;color:var(--mid);font-weight:300;margin-bottom:14px}
+/* EMPLOYMENT */
+.emph{background:var(--ink);padding:100px 80px;position:relative;overflow:hidden}
+.emph::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 70% 50%,rgba(184,150,90,.07) 0%,transparent 65%);pointer-events:none}
+.feats{background:var(--cream);padding:80px;border-bottom:1px solid var(--rule)}
+.feati{display:grid;grid-template-columns:1fr 2fr;gap:80px}
+.fbadge{font-size:10px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.fq{font-family:var(--ser);font-style:italic;font-size:17px;line-height:1.7;color:var(--mid);border-left:2px solid var(--gold);padding-left:20px;margin-bottom:32px}
+.sbul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.sbul li{padding:20px 22px;background:var(--ww);border:1px solid var(--rule)}
+.sbul li strong{display:block;font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;margin-bottom:6px}
+.sbul li span{font-size:13px;color:var(--mid);font-weight:300;line-height:1.6}
+.sgrid{padding:0 80px 80px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:1px;background:var(--rule)}
+.si{background:var(--ww);padding:40px 32px}
+.sin{font-family:var(--ser);font-size:11px;color:var(--gold);margin-bottom:14px;letter-spacing:.06em}
+.si h3{font-family:var(--ser);font-size:23px;font-weight:300;margin-bottom:12px;line-height:1.25}
+.si p{font-size:13px;color:var(--mid);line-height:1.75;font-weight:300}
+.ctabar{background:var(--cream);padding:44px 80px;border-top:1px solid var(--rule);display:flex;align-items:center;gap:36px;flex-wrap:wrap}
+/* BOOKING */
+.bkhead{padding:80px 80px 56px;border-bottom:1px solid var(--rule);max-width:720px}
+.bkcards{padding:60px 80px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bkc{border:1px solid var(--rule);padding:38px 30px;cursor:pointer;transition:border-color .25s,box-shadow .25s}
+.bkc:hover{border-color:var(--gold);box-shadow:0 6px 32px rgba(0,0,0,.06)}
+.bkc.dk{border-color:var(--ink);background:var(--ink)}
+.bcl{font-size:10px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.bkc.dk .bcl{color:var(--goldl)}
+.bdur{font-family:var(--ser);font-size:48px;font-weight:300;color:var(--ink);line-height:1;margin-bottom:2px}
+.bkc.dk .bdur{color:var(--cream)}
+.bunt{font-size:11px;color:var(--mid);letter-spacing:.1em;text-transform:uppercase;margin-bottom:18px}
+.bkc.dk .bunt{color:rgba(245,241,235,.4)}
+.bprice{font-family:var(--ser);font-size:26px;font-weight:300;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+.bkc.dk .bprice{color:var(--cream);border-bottom-color:rgba(255,255,255,.1)}
+.bdesc{font-size:13px;font-weight:300;color:var(--mid);line-height:1.75;margin-bottom:26px}
+.bkc.dk .bdesc{color:rgba(245,241,235,.5)}
+.bbtn{display:block;width:100%;padding:12px;background:transparent;border:1px solid var(--rule);font-size:11px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;font-family:var(--san);text-align:center;transition:background .2s,color .2s,border-color .2s}
+.bbtn:hover{background:var(--ink);color:var(--cream);border-color:var(--ink)}
+.bkc.dk .bbtn{border-color:var(--gold);color:var(--gold)}
+.bkc.dk .bbtn:hover{background:var(--gold);color:var(--ink)}
+.bform{padding:0 80px 80px;max-width:880px}
+.bftitle{font-family:var(--ser);font-size:26px;font-weight:300;margin-bottom:32px;padding-bottom:18px;border-bottom:1px solid var(--rule)}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fg{display:flex;flex-direction:column;gap:7px}
+.fg.full{grid-column:1/-1}
+.fg label{font-size:10px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--mid)}
+.fg input,.fg select,.fg textarea{border:1px solid var(--rule);background:transparent;padding:11px 15px;font-family:var(--san);font-size:14px;font-weight:300;color:var(--ink);outline:none;transition:border-color .2s;-webkit-appearance:none;width:100%}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--gold)}
+.fg textarea{resize:vertical;min-height:110px}
+.snote{font-size:12px;color:var(--mid);font-weight:300;font-style:italic;margin-top:4px}
+.ackw{margin-top:22px;padding:22px;background:var(--cream);border:1px solid var(--rule);display:flex;gap:14px;align-items:flex-start}
+.ackw input[type=checkbox]{margin-top:2px;width:15px;height:15px;flex-shrink:0;accent-color:var(--ink);cursor:pointer}
+.ackw p{font-size:12px;font-weight:300;color:var(--mid);line-height:1.7}
+.subm{margin-top:26px;padding:15px 44px;background:var(--ink);color:var(--cream);border:none;font-family:var(--san);font-size:11px;letter-spacing:.18em;text-transform:uppercase;cursor:pointer;transition:background .2s}
+.subm:hover{background:var(--gold);color:var(--ink)}
+/* SUCCESS */
+.succ{display:none;padding:100px 80px;max-width:720px}
+.succ.on{display:block}
+.succmark{font-family:var(--ser);font-size:44px;color:var(--gold);margin-bottom:28px}
+.succ h2{font-family:var(--ser);font-size:36px;font-weight:300;margin-bottom:18px;line-height:1.2}
+.succ > p{font-size:15px;font-weight:300;color:var(--mid);line-height:1.8;margin-bottom:14px}
+.eprev{margin-top:36px;border:1px solid var(--rule)}
+.ehead{padding:14px 22px;background:var(--ink);font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--cream);font-weight:300}
+.ebody{padding:26px 22px;font-size:14px;font-weight:300;color:var(--mid);line-height:1.8}
+.ebody p{margin-bottom:12px}
+.ebody ul{padding-left:20px;margin:14px 0}
+.ebody li{margin-bottom:9px;font-size:13px}
+/* PI */
+.pihero{background:var(--ink);padding:100px 80px;position:relative;overflow:hidden}
+.pihero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(184,150,90,.07) 0%,transparent 65%);pointer-events:none}
+.pinotice{background:var(--cream);padding:48px 80px;border-bottom:1px solid var(--rule);display:grid;grid-template-columns:1fr 2fr;gap:56px;align-items:center}
+.pinotice h3{font-family:var(--ser);font-size:26px;font-weight:300}
+.pinotice p{font-size:14px;font-weight:300;color:var(--mid);line-height:1.8}
+.pisplit{padding:80px;display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.pisvcs{display:flex;flex-direction:column;gap:22px}
+.pisvc{padding:26px;border:1px solid var(--rule)}
+.pisvc h4{font-family:var(--ser);font-size:20px;font-weight:300;margin-bottom:9px}
+.pisvc p{font-size:13px;color:var(--mid);line-height:1.7;font-weight:300}
+/* RESPONSIVE */
+@media(max-width:920px){
+  nav{padding:0 20px}
+  .nl{gap:16px}
+  .hero,.asplit,.ahero,.feati,.pinotice,.pisplit{grid-template-columns:1fr}
+  .hip,.hero::after{display:none}
+  .ht{padding:56px 24px}
+  hr.r,footer{padding-left:24px;padding-right:24px}
+  hr.r{margin:0 24px}
+  .ps,.feats,.emph,.pihero{padding:60px 24px}
+  .pgrid{grid-template-columns:1fr 1fr}
+  .al{padding:60px 24px}
+  .ar{padding:60px 24px}
+  .ahero,.asecs,.sgrid,.bkcards{grid-template-columns:1fr;padding:40px 24px}
+  .bkhead,.bform,.ctabar,.pinotice,.pisplit{padding-left:24px;padding-right:24px}
+  .sbul,.fgrid{grid-template-columns:1fr}
+  footer{grid-template-columns:1fr;padding:40px 24px;gap:32px}
+  .fbot{padding:16px 24px}
+  .succ{padding:60px 24px}
+  .stats{grid-template-columns:1fr 1fr}
+  .qband{padding:60px 24px}
+}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+.page.active .eyebrow{animation:fadeUp .55s ease both}
+.page.active .headline{animation:fadeUp .65s .08s ease both}
+.page.active .subline{animation:fadeUp .65s .18s ease both}
+.page.active .btn{animation:fadeUp .65s .28s ease both}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="logo" onclick="show('home')">Leone <span>Leone</span></a>
+  <ul class="nl">
+    <li><a onclick="show('employment')">Employment Law</a></li>
+    <li><a onclick="show('pi')">Personal Injury</a></li>
+    <li><a onclick="show('about')">About</a></li>
+    <li><a class="ncta" onclick="show('book')">Book a Consultation</a></li>
+  </ul>
+</nav>
+
+<!-- HOME -->
+<div id="page-home" class="page active">
+  <section class="hero">
+    <div class="ht">
+      <p class="eyebrow">Employment Attorney &nbsp;|&nbsp; Workplace Strategist</p>
+      <h1 class="headline">Strategic Counsel for<br><em>High-Stakes</em><br>Workplace Challenges.</h1>
+      <p class="subline">20+ years of institutional insight and advocacy for professionals navigating complex disputes and transitions in the San Francisco Bay Area.</p>
+      <button class="btn" onclick="show('book')">Schedule a Confidential Consultation</button>
+    </div>
+    <div class="hip">
+      <p class="hipc">Executive portrait — landscape orientation with negative space for text</p>
+    </div>
+  </section>
+  <hr class="r">
+  <section class="ps">
+    <p class="sl">Areas of Practice</p>
+    <h2 class="st" style="color:var(--cream)">Sophisticated Representation<br>for Complex Matters</h2>
+    <div class="pgrid">
+      <div class="pc" onclick="show('employment')"><p class="pn">01</p><h3 class="pt">Workplace Disputes &amp; Strategy</h3><p class="pb">Discrete consulting for professionals navigating internal politics, performance disputes, or contract disagreements.</p></div>
+      <div class="pc" onclick="show('employment')"><p class="pn">02</p><h3 class="pt">Wrongful Termination &amp; Retaliation</h3><p class="pb">Identifying leverage and building a litigation-aware strategy from the first moment of adverse action.</p></div>
+      <div class="pc" onclick="show('employment')"><p class="pn">03</p><h3 class="pt">Executive Severance &amp; Agreement Review</h3><p class="pb">Careful analysis of separation packages, non-competes, and executive employment agreements.</p></div>
+      <div class="pc" onclick="show('pi')"><p class="pn">04</p><h3 class="pt">Personal Injury</h3><p class="pb">Select representation for individuals seeking experienced, principled advocacy following serious injury.</p></div>
+    </div>
+  </section>
+  <div class="asplit">
+    <div class="al">
+      <p class="sl">Counsel</p>
+      <h2 class="st">The Institutional<br><em>Advantage</em></h2>
+      <p class="sb" style="max-width:480px">With over two decades of experience, Leslie Leone provides the strategic clarity necessary to navigate complex employment disputes and high-stakes transitions. Her career began inside the labor movement — giving her an understanding of institutional decision-making that no outside observer possesses.</p>
+      <br><br>
+      <button class="btn" onclick="show('about')">Learn About Leslie</button>
+    </div>
+    <div class="ar">
+      <div class="stats">
+        <div class="stat"><p class="stn">20+</p><p class="stl">Years of Practice</p></div>
+        <div class="stat"><p class="stn">900+</p><p class="stl">Members Represented</p></div>
+        <div class="stat"><p class="stn">100s</p><p class="stl">of Clients Served</p></div>
+        <div class="stat"><p class="stn">3rd</p><p class="stl">Generation San Franciscan</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="qband">
+    <blockquote>"The best resolution is achieved through strategy, not just conflict."</blockquote>
+    <cite>Leslie Leone — San Francisco Bay Area Attorney</cite>
+  </div>
+  <footer>
+    <div><p class="fb">Leone <span>Leone</span></p><p class="ftag">Strategic legal counsel for high-stakes workplace challenges. San Francisco Bay Area Attorney serving professionals throughout Northern California.</p></div>
+    <div class="fc"><h4>Practice</h4><ul><li><a onclick="show('employment')">Employment Law</a></li><li><a onclick="show('pi')">Personal Injury</a></li><li><a onclick="show('book')">Book a Consultation</a></li></ul></div>
+    <div class="fc"><h4>Firm</h4><ul><li><a onclick="show('about')">About Leslie Leone</a></li><li><a onclick="show('book')">Schedule a Call</a></li></ul></div>
+  </footer>
+  <div class="fbot"><p>© 2025 Leone Leone. All rights reserved. San Francisco Bay Area Attorney.</p><p>Attorney Advertising. Prior results do not guarantee a similar outcome.</p></div>
+</div>
+
+<!-- ABOUT -->
+<div id="page-about" class="page">
+  <div class="ahero">
+    <div>
+      <p class="sl">About</p>
+      <h1 class="st" style="font-size:clamp(36px,5vw,60px)">Leslie Leone</h1>
+      <p class="sb" style="max-width:580px">With over two decades of experience as an attorney and advisor, Leslie Leone provides the strategic clarity necessary to navigate complex employment disputes and high-stakes transitions.</p>
+    </div>
+    <div>
+      <div style="border:1px solid var(--rule);padding:26px 22px">
+        <p style="font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:11px">Contact</p>
+        <p style="font-size:14px;font-weight:300;color:var(--mid);line-height:1.75">San Francisco Bay Area Attorney<br>Leone Leone<br>San Francisco, CA</p>
+        <br>
+        <button onclick="show('book')" style="margin-top:6px;display:block;width:100%;padding:12px;background:transparent;border:1px solid var(--rule);font-family:var(--san);font-size:11px;letter-spacing:.14em;text-transform:uppercase;cursor:pointer;transition:background .2s,color .2s" onmouseover="this.style.background='var(--ink)';this.style.color='var(--cream)'" onmouseout="this.style.background='transparent';this.style.color='var(--ink)'">Schedule a Consultation</button>
+      </div>
+    </div>
+  </div>
+  <div class="asecs">
+    <div class="asec">
+      <h3>The Institutional Advantage</h3>
+      <p>Leslie began her career at the center of the labor movement. As a Staff Attorney and Business Agent for Teamsters Union Local 856, she negotiated improved wages and benefits and represented over 900 members across hospitals, public safety, and private industry.</p>
+      <p>This "inside-out" understanding of how institutional decisions are made — and where leverage actually resides — is the foundation of her consulting practice.</p>
+    </div>
+    <div class="asec">
+      <h3>A Career of Advocacy</h3>
+      <p>As the founder of Leone Leone, Leslie has spent nearly twenty years representing hundreds of clients in employment and personal injury matters. Her deep experience with the legal process allows her to provide a "litigation-aware" strategy — helping clients resolve high-stress situations through sophisticated negotiation before they escalate.</p>
+      <p>She continues to provide select, high-level representation for clients in both employment and personal injury matters.</p>
+    </div>
+    <div class="asec">
+      <h3>The Future of Work</h3>
+      <p>A third-generation San Franciscan, Leslie is focused on the intersection of law and technology. She advises on the strategic shifts caused by AI and emerging workplace dynamics, ensuring her clients are prepared for the future of the employment relationship.</p>
+    </div>
+  </div>
+  <div class="qband">
+    <blockquote>"Strategic clarity for every stage of the employment relationship — from negotiation to resolution."</blockquote>
+    <cite>Leslie Leone — San Francisco Bay Area Attorney</cite>
+  </div>
+  <footer>
+    <div><p class="fb">Leone <span>Leone</span></p><p class="ftag">Strategic legal counsel for high-stakes workplace challenges. San Francisco Bay Area Attorney serving professionals throughout Northern California.</p></div>
+    <div class="fc"><h4>Practice</h4><ul><li><a onclick="show('employment')">Employment Law</a></li><li><a onclick="show('pi')">Personal Injury</a></li><li><a onclick="show('book')">Book a Consultation</a></li></ul></div>
+    <div class="fc"><h4>Firm</h4><ul><li><a onclick="show('about')">About Leslie Leone</a></li><li><a onclick="show('book')">Schedule a Call</a></li></ul></div>
+  </footer>
+  <div class="fbot"><p>© 2025 Leone Leone. All rights reserved. San Francisco Bay Area Attorney.</p><p>Attorney Advertising. Prior results do not guarantee a similar outcome.</p></div>
+</div>
+
+<!-- EMPLOYMENT -->
+<div id="page-employment" class="page">
+  <div class="emph">
+    <p class="sl">Employment Law</p>
+    <h1 class="st" style="color:var(--cream);max-width:700px">Workplace Strategy &amp;<br><em style="color:var(--goldl)">Employment Counsel</em></h1>
+    <p class="sb" style="color:rgba(245,241,235,.55);max-width:560px">Sophisticated representation for professionals and executives navigating the full spectrum of employment challenges. San Francisco Bay Area Attorney Leslie Leone brings institutional insight to every engagement.</p>
+  </div>
+  <div class="feats">
+    <div class="feati">
+      <div>
+        <p class="fbadge">Featured Practice</p>
+        <h2 style="font-family:var(--ser);font-size:36px;font-weight:300;line-height:1.2">Workplace Disputes &amp; Strategy</h2>
+      </div>
+      <div>
+        <p class="fq">"The best resolution is achieved through strategy, not just conflict."</p>
+        <p style="font-size:14px;color:var(--mid);font-weight:300;line-height:1.8;margin-bottom:28px">Leslie Leone provides discrete consulting for professionals navigating internal politics, performance disputes, or contract disagreements. Before any formal action is taken, understanding your leverage is essential.</p>
+        <ul class="sbul">
+          <li><strong>Leverage Assessment</strong><span>Identifying your strongest position before you take action — a clear-eyed analysis of institutional power dynamics.</span></li>
+          <li><strong>Strategic Communication</strong><span>Crafting the right message for HR, management, or boards — precision language that protects your position.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="sgrid">
+    <div class="si"><p class="sin">02</p><h3>Wrongful Termination &amp; Retaliation</h3><p>Representing employees whose termination violated California law — including retaliation for whistleblowing, protected leave, or discrimination complaints. Building a litigation-aware strategy from day one.</p></div>
+    <div class="si"><p class="sin">03</p><h3>Executive Severance &amp; Agreement Review</h3><p>Careful negotiation and review of separation packages, executive employment agreements, non-compete clauses, and equity provisions. Protecting what you've earned.</p></div>
+    <div class="si"><p class="sin">04</p><h3>Sexual Harassment &amp; Workplace Misconduct</h3><p>Discrete, experienced representation for individuals facing harassment or a hostile work environment. Comprehensive guidance on reporting obligations and legal remedies available.</p></div>
+  </div>
+  <div class="ctabar">
+    <div><p class="sl">Ready to discuss your situation?</p><p style="font-size:14px;color:var(--mid);font-weight:300">A confidential consultation is the first step.</p></div>
+    <button class="btn" onclick="show('book')">Book a Consultation</button>
+  </div>
+  <footer>
+    <div><p class="fb">Leone <span>Leone</span></p><p class="ftag">Strategic legal counsel for high-stakes workplace challenges. San Francisco Bay Area Attorney serving professionals throughout Northern California.</p></div>
+    <div class="fc"><h4>Practice</h4><ul><li><a onclick="show('employment')">Employment Law</a></li><li><a onclick="show('pi')">Personal Injury</a></li><li><a onclick="show('book')">Book a Consultation</a></li></ul></div>
+    <div class="fc"><h4>Firm</h4><ul><li><a onclick="show('about')">About Leslie Leone</a></li><li><a onclick="show('book')">Schedule a Call</a></li></ul></div>
+  </footer>
+  <div class="fbot"><p>© 2025 Leone Leone. All rights reserved. San Francisco Bay Area Attorney.</p><p>Attorney Advertising. Prior results do not guarantee a similar outcome.</p></div>
+</div>
+
+<!-- PERSONAL INJURY -->
+<div id="page-pi" class="page">
+  <div class="pihero">
+    <p class="sl">Personal Injury</p>
+    <h1 class="st" style="color:var(--cream);max-width:680px">Principled Advocacy for<br><em style="color:var(--goldl)">Serious Injuries</em></h1>
+    <p class="sb" style="color:rgba(245,241,235,.55);max-width:540px">Leslie Leone offers select representation for individuals who have suffered serious personal injury. Her approach combines rigorous legal analysis with the strategic sensibility built over two decades of practice.</p>
+  </div>
+  <div class="pinotice">
+    <h3>Complimentary Preliminary Call Available</h3>
+    <p>For Personal Injury inquiries, Leslie offers a 15-minute complimentary preliminary call to assess your matter. This allows for a candid, no-cost conversation before any commitment is made. To schedule, please book through the consultation page and select the Personal Injury option.</p>
+  </div>
+  <div class="pisplit">
+    <div>
+      <p class="sl">Approach</p>
+      <h2 class="st">Litigation-Aware<br>from Day One</h2>
+      <p class="sb">Every personal injury matter is evaluated with an eye toward resolution — whether through skilled negotiation or, when necessary, litigation. Leslie's depth of experience ensures your rights are fully protected at every stage.</p>
+    </div>
+    <div class="pisvcs">
+      <div class="pisvc"><h4>Motor Vehicle Accidents</h4><p>Comprehensive representation for injuries resulting from automobile, motorcycle, and rideshare accidents.</p></div>
+      <div class="pisvc"><h4>Premises Liability</h4><p>Holding property owners accountable for dangerous conditions that cause serious harm.</p></div>
+      <div class="pisvc"><h4>Workplace Injuries</h4><p>Navigating the intersection of workers' compensation and third-party liability claims.</p></div>
+    </div>
+  </div>
+  <div class="ctabar">
+    <div><p class="sl">Begin with a complimentary call</p><p style="font-size:14px;color:var(--mid);font-weight:300">Personal Injury inquiries only — 15 minutes, no charge.</p></div>
+    <button class="btn" onclick="show('book')">Schedule a Preliminary Call</button>
+  </div>
+  <footer>
+    <div><p class="fb">Leone <span>Leone</span></p><p class="ftag">Strategic legal counsel for high-stakes workplace challenges. San Francisco Bay Area Attorney serving professionals throughout Northern California.</p></div>
+    <div class="fc"><h4>Practice</h4><ul><li><a onclick="show('employment')">Employment Law</a></li><li><a onclick="show('pi')">Personal Injury</a></li><li><a onclick="show('book')">Book a Consultation</a></li></ul></div>
+    <div class="fc"><h4>Firm</h4><ul><li><a onclick="show('about')">About Leslie Leone</a></li><li><a onclick="show('book')">Schedule a Call</a></li></ul></div>
+  </footer>
+  <div class="fbot"><p>© 2025 Leone Leone. All rights reserved. San Francisco Bay Area Attorney.</p><p>Attorney Advertising. Prior results do not guarantee a similar outcome.</p></div>
+</div>
+
+<!-- BOOKING -->
+<div id="page-book" class="page">
+  <!-- Success -->
+  <div id="succ" class="succ">
+    <p class="succmark">&#10022;</p>
+    <h2>Your Consultation Is Confirmed.</h2>
+    <p>Thank you for booking with Leslie Leone. A confirmation has been sent to your email address with full details and preparation instructions.</p>
+    <div class="eprev">
+      <div class="ehead">Confirmation Email — Preparing for our Strategic Evaluation | Leslie Leone</div>
+      <div class="ebody">
+        <p>Hi [Client Name],</p>
+        <p>Your consultation is confirmed for [Date] at [Time].</p>
+        <p>To ensure we maximize our time together, please follow these guidelines:</p>
+        <ul>
+          <li><strong>Document Policy:</strong> Please do not send full document sets (contracts, 40+ page files, or medical records) prior to our call. To keep your costs predictable, I review relevant materials during our scheduled session so we can analyze them together in real-time.</li>
+          <li><strong>The Summary:</strong> Please reply to this email with a concise, one-page summary or bulleted timeline of the top 5-7 most critical events.</li>
+          <li><strong>Your Goal:</strong> Be ready to define your "Ideal Outcome" (e.g., a graceful exit, a specific compensation target, or staying in your role).</li>
+        </ul>
+        <p><em>Note on Scope: This session is a one-time strategic evaluation and does not create an attorney-client relationship.</em></p>
+      </div>
+    </div>
+  </div>
+  <!-- Form View -->
+  <div id="bview">
+    <div class="bkhead">
+      <p class="sl">Book a Consultation</p>
+      <h1 class="st">Schedule Your<br><em>Strategic Evaluation</em></h1>
+      <p class="sb">Select the session that best fits your situation. All consultations are strictly confidential.</p>
+    </div>
+    <div class="bkcards">
+      <div class="bkc" id="c30" onclick="pick('30min')">
+        <p class="bcl">Initial Review</p>
+        <p class="bdur">30</p>
+        <p class="bunt">Minutes</p>
+        <p class="bprice">$350</p>
+        <p class="bdesc">Best for a focused discussion on a single, urgent workplace incident.</p>
+        <div class="bbtn">Select This Session</div>
+      </div>
+      <div class="bkc dk" id="c60" onclick="pick('60min')">
+        <p class="bcl">Strategic Evaluation</p>
+        <p class="bdur">60</p>
+        <p class="bunt">Minutes</p>
+        <p class="bprice">$600</p>
+        <p class="bdesc">Best for a high-level assessment of complex situations to identify immediate risks and leverage.</p>
+        <div class="bbtn">Select This Session</div>
+      </div>
+      <div class="bkc" id="c15" onclick="pick('15min')">
+        <p class="bcl">Preliminary Call</p>
+        <p class="bdur">15</p>
+        <p class="bunt">Minutes</p>
+        <p class="bprice">Complimentary</p>
+        <p class="bdesc">Strictly for Personal Injury inquiries only.</p>
+        <div class="bbtn">Select This Session</div>
+      </div>
+    </div>
+    <div class="bform">
+      <p class="bftitle">Complete Your Booking</p>
+      <div class="fgrid">
+        <div class="fg"><label>First Name *</label><input type="text" id="fn" placeholder="First name"></div>
+        <div class="fg"><label>Last Name *</label><input type="text" id="ln" placeholder="Last name"></div>
+        <div class="fg"><label>Email Address *</label><input type="email" id="em" placeholder="your@email.com"></div>
+        <div class="fg"><label>Phone Number</label><input type="tel" id="ph" placeholder="(415) 000-0000"></div>
+        <div class="fg"><label>Session Type *</label>
+          <select id="sess">
+            <option value="">-- Select a session --</option>
+            <option value="30min">30-Minute Initial Review -- $350</option>
+            <option value="60min">60-Minute Strategic Evaluation -- $600</option>
+            <option value="15min">15-Minute Preliminary Call -- Complimentary (Personal Injury only)</option>
+          </select>
+        </div>
+        <div class="fg"><label>Preferred Date</label><input type="date" id="dt"></div>
+        <div class="fg full">
+          <label>Matter Summary * <span style="color:var(--gold)">(Maximum 5 sentences)</span></label>
+          <textarea id="summ" placeholder="Please distill the key facts of your situation in no more than 5 sentences. Focus on the most critical events and the outcome you are seeking."></textarea>
+          <p class="snote">This summary ensures we use our time together as strategically as possible.</p>
+        </div>
+      </div>
+      <div class="ackw">
+        <input type="checkbox" id="ack">
+        <p>By booking this session, you acknowledge: <strong>(1)</strong> This is a one-time preliminary evaluation to determine potential strategy and does not create an attorney-client relationship, and <strong>(2)</strong> Should we move forward with formal representation or deeper analysis, engagement begins at <strong>$650/hour</strong> with a <strong>$1,500 initial retainer</strong>.</p>
+      </div>
+      <button class="subm" onclick="submitForm()">Confirm &amp; Submit</button>
+    </div>
+  </div>
+  <footer>
+    <div><p class="fb">Leone <span>Leone</span></p><p class="ftag">Strategic legal counsel for high-stakes workplace challenges. San Francisco Bay Area Attorney serving professionals throughout Northern California.</p></div>
+    <div class="fc"><h4>Practice</h4><ul><li><a onclick="show('employment')">Employment Law</a></li><li><a onclick="show('pi')">Personal Injury</a></li></ul></div>
+    <div class="fc"><h4>Firm</h4><ul><li><a onclick="show('about')">About Leslie Leone</a></li></ul></div>
+  </footer>
+  <div class="fbot"><p>© 2025 Leone Leone. All rights reserved. San Francisco Bay Area Attorney.</p><p>Attorney Advertising. Prior results do not guarantee a similar outcome.</p></div>
+</div>
+
+<script>
+function show(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  window.scrollTo({top:0,behavior:'smooth'});
+  if(id==='book'){
+    document.getElementById('succ').classList.remove('on');
+    document.getElementById('bview').style.display='block';
+  }
+}
+function pick(tier){
+  ['c30','c60','c15'].forEach(id=>{
+    var c=document.getElementById(id);
+    if(!c.classList.contains('dk')){c.style.borderColor='';c.style.boxShadow='';}
+  });
+  var map={'30min':'c30','60min':'c60','15min':'c15'};
+  var card=document.getElementById(map[tier]);
+  if(card&&!card.classList.contains('dk')){
+    card.style.borderColor='var(--gold)';
+    card.style.boxShadow='0 6px 32px rgba(0,0,0,.07)';
+  }
+  document.getElementById('sess').value=tier;
+  document.querySelector('.bform').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function submitForm(){
+  var fn=document.getElementById('fn').value.trim();
+  var em=document.getElementById('em').value.trim();
+  var sess=document.getElementById('sess').value;
+  var summ=document.getElementById('summ').value.trim();
+  var ack=document.getElementById('ack').checked;
+  if(!fn||!em||!sess||!summ){alert('Please complete all required fields, including the Matter Summary.');return;}
+  if(!ack){alert('Please acknowledge the terms before submitting.');return;}
+  var sentences=summ.split(/[.!?]+/).filter(function(s){return s.trim().length>0;});
+  if(sentences.length>5){alert('Please keep your Matter Summary to a maximum of 5 sentences.');return;}
+  document.getElementById('bview').style.display='none';
+  document.getElementById('succ').classList.add('on');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+</script>
+</body>
+</html>
