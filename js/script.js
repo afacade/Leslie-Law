@@ -11,14 +11,14 @@ function show(id) {
 }
 
 function pick(tier) {
-  ['c30', 'c60', 'c15'].forEach(function(id) {
+  ['c30', 'c60'].forEach(function(id) {
     var c = document.getElementById(id);
     if (!c.classList.contains('dk')) {
       c.style.borderColor = '';
       c.style.boxShadow = '';
     }
   });
-  var map = { '30min': 'c30', '60min': 'c60', '15min': 'c15' };
+  var map = { '30min': 'c30', '60min': 'c60' };
   var card = document.getElementById(map[tier]);
   if (card && !card.classList.contains('dk')) {
     card.style.borderColor = 'var(--gold)';
@@ -55,8 +55,7 @@ function submitForm() {
   // Session type labels
   var sessLabels = {
     '30min': '30-Minute Initial Review ($350)',
-    '60min': '60-Minute Strategic Evaluation ($600)',
-    '15min': '15-Minute Preliminary Call (Complimentary)'
+    '60min': '60-Minute Strategic Evaluation ($600)'
   };
   var sessLabel = sessLabels[sess] || sess;
 
@@ -77,6 +76,19 @@ function submitForm() {
   document.getElementById('conf-email-name').textContent = fullName;
   document.getElementById('conf-date').textContent = dateDisplay;
   document.getElementById('conf-session').textContent = sessLabel;
+
+  // Build mailto to leslieleone@me.com
+  var subject = encodeURIComponent('New Consultation Booking — ' + sessLabel + ' — ' + fullName);
+  var body = encodeURIComponent(
+    'New consultation booking received:\n\n' +
+    'Name: ' + fullName + '\n' +
+    'Email: ' + em + '\n' +
+    'Phone: ' + (document.getElementById('ph').value.trim() || 'Not provided') + '\n' +
+    'Session: ' + sessLabel + '\n' +
+    'Preferred Date: ' + dateDisplay + '\n\n' +
+    'Matter Summary:\n' + summ
+  );
+  window.open('mailto:leslieleone@me.com?subject=' + subject + '&body=' + body, '_self');
 
   document.getElementById('bview').style.display = 'none';
   document.getElementById('succ').classList.add('on');
