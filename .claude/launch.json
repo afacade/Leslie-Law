@@ -3,8 +3,14 @@
   "configurations": [
     {
       "name": "Leone Law Firm - Static Site",
-      "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "-l", "3000"],
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": [
+        "-NoProfile",
+        "-ExecutionPolicy", "Bypass",
+        "-File", "C:\\Users\\Admin\\Documents\\GitHub\\Leslie-Law\\.claude\\serve.ps1",
+        "-Port", "3000",
+        "-Root", "C:\\Users\\Admin\\Documents\\GitHub\\Leslie-Law"
+      ],
       "port": 3000
     }
   ]
